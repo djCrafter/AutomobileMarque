@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <fragment
+            android:id="@+id/marque_fragment"
+            android:name="com.example.automobilemarque.MarqueFragment"
+            tools:layout="@layout/fragment_marque"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="350sp"
+            android:layout_height="match_parent" />
+
+    <fragment
+            android:id="@+id/details_marque"
+            android:name="com.example.automobilemarque.DetailstFragment"
+            tools:layout="@layout/fragment_detailst"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/marque_fragment"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+    />
+
+</android.support.constraint.ConstraintLayout>
